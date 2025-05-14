@@ -1,5 +1,5 @@
 function del() {
-  if [[ $# -eq 0 ]]; then
+  if [[ $# -eq 0 ]] || [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
     echo "Usage: del <file_or_folder>"
     return 1
   fi
